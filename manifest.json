@@ -1,0 +1,33 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Terminator Layouts",
+  "description": "Provides an easy way to launch Terminator layouts directly from Ulauncher",
+  "developer_name": "Kleber Silva <kleber.swf@gmail.com>",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "keyword",
+      "type": "keyword",
+      "name": "Terminator Layout",
+      "description": "Keyword to invoke this extension",
+      "default_value": "tl"
+    },
+    {
+      "id": "terminator_config",
+      "type": "input",
+      "name": "Terminator Configuration File",
+      "description": "Select the Terminator config file, which contains all layouts.",
+      "default_value": "~/.config/terminator/config"
+    },
+    {
+      "id": "terminator_cmd",
+      "type": "input",
+      "name": "Terminator Executable",
+      "description": "Insert the executable line for Terminator. You can add more command line options if you want.",
+      "default_value": "terminator"
+    }
+  ]
+}
