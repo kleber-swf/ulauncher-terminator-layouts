@@ -43,7 +43,7 @@ class KeywordQueryEventListener(EventListener):
         query = event.get_argument()
         if query:
             query = query.strip().lower()
-            layouts = [a for a in layouts if query in a]
+            layouts = [a for a in layouts if query in a.lower()]
 
         entries = []
         for layout in layouts:
