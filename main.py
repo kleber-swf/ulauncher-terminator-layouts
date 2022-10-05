@@ -50,7 +50,7 @@ class KeywordQueryEventListener(EventListener):
             entries.append(ExtensionResultItem(
                 name=layout,
                 icon='images/icon.png',
-                description=layout + ' layoutt',
+                description=layout + ' layout',
                 on_enter=ExtensionCustomAction({ 'layout': layout })
             ))
 
